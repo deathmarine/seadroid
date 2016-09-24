@@ -71,7 +71,7 @@ public class SeafDirent implements SeafItem, Serializable {
     public int getIcon() {
         if (isDir()) {
             if (!hasWritePermission()) {
-                return R.drawable.folder_r;
+                return R.drawable.folder_read_only;
             } else {
                 return R.drawable.folder;
             }
